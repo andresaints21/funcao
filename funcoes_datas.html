@@ -30,6 +30,37 @@
         data.setFullYear(data.getFullYear() - 1)
         document.write('<hr/>')
         document.write(data.toString())
+        document.write('<br/>')
+        document.write('<br/>')
+        document.write('<br/>')
+        document.write('<hr/>')
+        
+        var date1 = new Date(2022, 6, 14)
+        var date2 = new Date(2022, 0, 14)
+
+        document.write(date1.toString(), '<br/>')
+
+
+        document.write(date2.toString(), '<br/>')
+        document.write('<br/>')
+        document.write('<br/>')
+        document.write('<br/>')
+        document.write('<hr/>')
+
+        document.write(date1.getTime(), '<br/>')
+
+
+        document.write(date2.getTime(), '<br/>')
+        document.write('<br/>')
+        document.write('<hr/>')
+        var milisegundos = Math.abs(date1.getTime() - date2.getTime())
+        document.write(milisegundos,'<br/>')
+
+
+        var milisegundosDia = (1*24*60*60*1000)
+        document.write('1 dia tem ' + milisegundosDia + ' milisegundos.','<br/>')
+
+        document.write(+ Math.ceil(milisegundos / milisegundosDia) + ' dias.')
 
 
     </script>
